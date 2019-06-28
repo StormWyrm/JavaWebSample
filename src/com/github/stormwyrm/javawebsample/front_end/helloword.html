@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello world</title>
+</head>
+<body>
+this is my first html demo!
+<h1>这是一级标题</h1>
+<h2>这是二级标题</h2>
+<h3>这是三级标题</h3>
+
+<p>这是一个段落。</p>
+<hr>
+<p>这是另一个段落。</p>
+
+<!--连接-->
+<a href="http://www.baidu.com" target="_blank">这是一个连接</a>
+
+<!--图片-->
+<img src="" width="" height="">
+
+<script>
+    var name = "This Window";
+    var object = {
+        name: "My Object",
+        getNameFunc: function () {
+            return function () {
+                return this.name
+            }
+        }
+    }
+    alert(object.getNameFunc()());
+</script>
+<script>
+    var name = "The Window";
+    var object = {
+        name : "My Object",
+        getNameFunc : function(){
+            var that = this;
+            console.log("this = "+this.name);
+            console.log("that = "+that.name)
+            return function(){
+                return that.name;
+            };
+
+        }
+    };
+    alert(object.getNameFunc()());
+</script>
+</body>
+</html>
