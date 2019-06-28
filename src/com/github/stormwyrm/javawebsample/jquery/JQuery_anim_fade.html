@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $(".class1").fadeIn()
+            });
+
+            $(".btn2").click(function () {
+                $(".class2").fadeOut()
+            });
+
+            $(".btn3").click(function () {
+                $(".class3").fadeToggle()
+            });
+        });
+    </script>
+    <style>
+        button{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="class1" style="width:100px;height: 100px;background-color: red;display: none"></div>
+<button class="btn1">淡入效果</button>
+
+<div class="class2" style="width:100px;height: 100px;background-color: #ffe426"></div>
+<button class="btn2">淡出效果</button>
+
+<div class="class3" style="width:100px;height: 100px;background-color: darkolivegreen"></div>
+<button class="btn3">淡入淡出效果</button>
+
+</body>
+</html>
