@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旅游网</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            width: 100%;
+        }
+
+        .top_banner {
+            width: 100%;
+            height: auto;
+        }
+
+        .div_top_title {
+            width: 100%;
+            display: flex;
+        }
+
+        .div_logo {
+            width: 220px;
+        }
+
+        .div_tel {
+            width: 250px;
+        }
+
+        .div_search {
+            flex: 1;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .div_search input {
+            width: 350px;
+            height: 28px;
+            padding: 5px;
+            border: 2px solid #ffe426;
+
+        }
+
+        .div_search button {
+            width: 50px;
+            height: 30px;
+            border: 2px solid #ffe426;
+            background-color: #ffe426;
+        }
+
+        ul {
+            width: 100%;
+            background-color: rgba(211, 211, 211, 0.15);
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        a:link {
+            color: grey;
+        }
+
+        a:hover {
+            color: black;
+            background-color: lightgrey;
+        }
+    </style>
+    <script>
+        var curIndex = 0;
+
+        function changeImg() {
+            var imgUrl = ""
+            if (++curIndex > 2) {
+                curIndex = 0;
+            }
+            if (curIndex === 0) {
+                imgUrl = "img/banner_1.jpg"
+            } else if (curIndex === 1) {
+                imgUrl = "img/banner_2.jpg"
+            } else {
+                imgUrl = "img/banner_3.jpg"
+            }
+            document.getElementById("looper_banner").src = imgUrl;
+        }
+
+        window.onload = function () {
+            setInterval(changeImg, 5000)
+        }
+
+    </script>
+</head>
+<body>
+<div class="header">
+    <div>
+        <img src="img/top_banner.jpg" alt="#" class="top_banner">
+    </div>
+    <div class="div_top_title" style="width: 100%;display: flex;">
+        <div class="div_logo"><img src="img/logo.jpg"></div>
+        <div class="div_search">
+            <input type="text" placeholder="请输入路线名称">
+            <button type="button">搜索</button>
+        </div>
+        <div class="div_tel"><img src="img/hotel_tel.png"></div>
+    </div>
+</div>
+<div class="container">
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">Android</a></li>
+        <li><a href="#">Ios</a></li>
+        <li><a href="#">Php</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">Kotlin</a></li>
+        <li><a href="#">Groovy</a></li>
+        <li><a href="#">JavaScritp</a></li>
+        <li><a href="#">ObjectC</a></li>
+        <li><a href="#">C ++</a></li>
+    </ul>
+
+    <div>
+        <img id="looper_banner" src="img/banner_1.jpg" alt="#">
+    </div>
+
+
+    <div style="width: 100%; margin-top: 20px">
+        <div style="vertical-align: middle">
+            <img src="img/icon_1.jpg" style="width: 30px;height: 30px;"><span>黑马精选</span>
+        </div>
+        <div>
+            <div style="width: auto;height: auto;display: inline-block;margin-left: 10px">
+                <img src="img/jiangxuan_1.jpg">
+                <p style="width: 280px">上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                <p style="color: red">$ 699</p>
+            </div>
+
+            <div style="width: auto;height: auto;display: inline-block;margin-left: 10px">
+                <img src="img/jiangxuan_1.jpg">
+                <p style="width: 280px">上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                <p style="color: red">$ 699</p>
+            </div>
+
+            <div style="width: auto;height: auto;display: inline-block;margin-left: 10px">
+                <img src="img/jiangxuan_1.jpg">
+                <p style="width: 280px">上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                <p style="color: red">$ 699</p>
+            </div>
+
+
+            <div style="width: auto;height: auto;display: inline-block;margin-left: 10px">
+                <img src="img/jiangxuan_1.jpg">
+                <p style="width: 280px">上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                <p style="color: red">$ 699</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="width: 100%; margin-top: 20px">
+        <div style="vertical-align: middle">
+            <img src="img/icon_1.jpg" style="width: 30px;height: 30px;"><span>黑马精选</span>
+        </div>
+        <div>
+            <div style="width: auto;height: auto;display: inline-block;margin-left: 10px">
+                <img src="img/jiangxuan_1.jpg">
+                <p style="width: 280px">上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                <p style="color: red">$ 699</p>
+            </div>
+
+            <div style="width: auto;height: auto;display: inline-block;margin-left: 10px">
+                <img src="img/jiangxuan_1.jpg">
+                <p style="width: 280px">上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                <p style="color: red">$ 699</p>
+            </div>
+
+            <div style="width: auto;height: auto;display: inline-block;margin-left: 10px">
+                <img src="img/jiangxuan_1.jpg">
+                <p style="width: 280px">上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                <p style="color: red">$ 699</p>
+            </div>
+
+
+            <div style="width: auto;height: auto;display: inline-block;margin-left: 10px">
+                <img src="img/jiangxuan_1.jpg">
+                <p style="width: 280px">上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+                <p style="color: red">$ 699</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="footer">
+    <img src="">
+</div>
+</body>
+</html>
